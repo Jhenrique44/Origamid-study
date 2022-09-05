@@ -1,8 +1,1 @@
-div {
-  background: #84A;
-  height: 100vh;
-  width: 100vw;
-}
-div * {
-  color: antiquewhite;
-}/*# sourceMappingURL=main.min.css.map */
+section{max-width:600px;margin:0 auto}.modal{box-shadow:10px 10px 0 0 rgba(0,0,0,.5),15px 15px 0 0 rgba(0,0,0,.5),20px 20px 0 0 rgba(0,0,0,.5)}.modal h1{color:#84e;font-family:Roboto,sans-serif;margin-bottom:60px;font-size:4em;line-height:1;font-family:monospace;font-weight:bold}.modal h1::after{content:"";display:block;width:100px;height:4px;background:#84c;width:260px}@media(max-width: 768px){.modal h1{color:#7fffd4}}.modal p{font-size:1.2em;line-height:1.4;max-width:400px;font-family:Roboto,sans-serif}.modal a{display:block;max-width:120px;padding:10px;border-radius:4px;text-align:center;background:#84e;color:#fff;text-decoration:none;text-transform:uppercase;font-family:Roboto,sans-serif}ul{text-align:center}ul li{display:inline-block;list-style:none}ul li a{display:block;padding:20px;text-decoration:none;background:blue;color:#f0f8ff}ul li a:hover{background:#84e}/*# sourceMappingURL=main.min.css.map */
