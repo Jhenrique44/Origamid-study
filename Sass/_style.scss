@@ -38,7 +38,45 @@ $gutter: 60px;
         @content;
     }
 }
+//functions
+@mixin  type-1($size) {
+    font-family: monospace;
+    font-weight: normal;
+    @if $size == 16{ 
 
+    }@else if $size == 18 {
+        font-size: 1.25em;
+    }@else if $size == 24{ 
+        font-size: 1.5em;
+    }
+    
+}
+// Lopp
+$container: 768;
+$gutter: 20;
+$columns: 12;
+@for $i from 1 through $columns{ 
+    $width: $container / $columns * $i - $gutter ;
+    .grid-#{$i}{
+        width:  $width +  px;
+    }
+}
+@for $i from 1 through $columns {
+    $width: percentage(1/$i);
+    .porcento-#{$i}{
+        width: $width;
+    }
+}
+$lista: facebook, instagram, twitter, tumblr;
+
+@each $item in $lista {
+    .rede-#{$item} {
+        background: url('../img/#{$item}.png');
+    }
+}
+p {
+    @include type-1(18)
+}
 section {
     max-width: 600px;
     margin: 0 auto;
